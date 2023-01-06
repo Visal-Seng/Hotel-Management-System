@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TermProjectWindow.UserSetting;
 
 namespace TermProjectWindow
 {
@@ -18,6 +19,16 @@ namespace TermProjectWindow
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSetting_Click(object sender, EventArgs e)
+        {
+            userControl1.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

@@ -9,3 +9,15 @@ C:\Users\USER\Desktop\TermProject\TermProjectWindow\TermProjectWindow\obj\Debug\
 C:\Users\USER\Desktop\TermProject\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.csproj.CoreCompileInputs.cache
 C:\Users\USER\Desktop\TermProject\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.exe
 C:\Users\USER\Desktop\TermProject\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.pdb
+C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\bin\Debug\TermProjectWindow.exe.config
+C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\bin\Debug\TermProjectWindow.exe
+C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\bin\Debug\TermProjectWindow.pdb
+C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.csproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.Form1.resources
+C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.Properties.Resources.resources
+C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.UserSetting.userControl.resources
+C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.csproj.GenerateResource.cache
+C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.exe
+C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.pdb

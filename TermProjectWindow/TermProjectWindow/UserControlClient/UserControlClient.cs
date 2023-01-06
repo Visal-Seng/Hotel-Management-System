@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TermProjectWindow
+namespace TermProjectWindow.UserControlClient
 {
-    public partial class UserControlSetting : UserControl
+    public partial class UserControlClient : UserControl
     {
-        public UserControlSetting()
+        public UserControlClient()
         {
             InitializeComponent();
         }
