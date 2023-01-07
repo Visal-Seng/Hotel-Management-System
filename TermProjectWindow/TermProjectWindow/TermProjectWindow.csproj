@@ -60,6 +60,12 @@
     <Compile Include="UserControlClient\UserControlClient.Designer.cs">
       <DependentUpon>UserControlClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlRoom\UserControlRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlRoom\UserControlRoom.Designer.cs">
+      <DependentUpon>UserControlRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlSetting\userControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     </Compile>
     <EmbeddedResource Include="UserControlClient\UserControlClient.resx">
       <DependentUpon>UserControlClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlRoom\UserControlRoom.resx">
+      <DependentUpon>UserControlRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlSetting\userControl.resx">
       <DependentUpon>userControl.cs</DependentUpon>
