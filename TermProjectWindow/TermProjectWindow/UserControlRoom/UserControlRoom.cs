@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TermProjectWindow.UserControlClient
+namespace TermProjectWindow.UserControlRoom
 {
-    public partial class UserControlClient : UserControl
+    public partial class UserControlRoom : UserControl
     {
-        public UserControlClient()
+        public UserControlRoom()
         {
             InitializeComponent();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

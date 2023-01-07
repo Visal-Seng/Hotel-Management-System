@@ -21,3 +21,4 @@ C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermPro
 C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.csproj.CoreCompileInputs.cache
 C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.exe
 C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.pdb
+C:\Users\USER\Documents\GitHub\Hotel-Management-System\TermProjectWindow\TermProjectWindow\obj\Debug\TermProjectWindow.UserControlClient.UserControlClient.resources

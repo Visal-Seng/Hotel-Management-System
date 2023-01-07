@@ -54,10 +54,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserSetting\userControl.cs">
+    <Compile Include="UserControlClient\UserControlClient.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserSetting\userControl.Designer.cs">
+    <Compile Include="UserControlClient\UserControlClient.Designer.cs">
+      <DependentUpon>UserControlClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlSetting\userControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlSetting\userControl.Designer.cs">
       <DependentUpon>userControl.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
@@ -73,7 +79,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserSetting\userControl.resx">
+    <EmbeddedResource Include="UserControlClient\UserControlClient.resx">
+      <DependentUpon>UserControlClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSetting\userControl.resx">
       <DependentUpon>userControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

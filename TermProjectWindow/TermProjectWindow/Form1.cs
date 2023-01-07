@@ -20,7 +20,7 @@ namespace TermProjectWindow
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            userControlClient1.Show();
         }
 
         private void buttonSetting_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace TermProjectWindow
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

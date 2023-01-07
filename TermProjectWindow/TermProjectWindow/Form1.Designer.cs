@@ -32,25 +32,26 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.linkLabelLogOut = new System.Windows.Forms.LinkLabel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.labelUsername = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonDashboard = new System.Windows.Forms.Button();
             this.buttonClient = new System.Windows.Forms.Button();
             this.buttonRoom = new System.Windows.Forms.Button();
             this.buttonReservation = new System.Windows.Forms.Button();
             this.buttonSetting = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.linkLabelLogOut = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.labelUsername = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.userControl1 = new TermProjectWindow.UserSetting.userControl();
+            this.userControlClient1 = new TermProjectWindow.UserControlClient.UserControlClient();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -97,70 +98,6 @@
             this.label1.Size = new System.Drawing.Size(174, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "Hotel management";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.linkLabelLogOut);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(200, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1003, 162);
-            this.panel1.TabIndex = 1;
-            // 
-            // linkLabelLogOut
-            // 
-            this.linkLabelLogOut.AutoSize = true;
-            this.linkLabelLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabelLogOut.LinkColor = System.Drawing.Color.Black;
-            this.linkLabelLogOut.Location = new System.Drawing.Point(921, 43);
-            this.linkLabelLogOut.Name = "linkLabelLogOut";
-            this.linkLabelLogOut.Size = new System.Drawing.Size(70, 20);
-            this.linkLabelLogOut.TabIndex = 2;
-            this.linkLabelLogOut.TabStop = true;
-            this.linkLabelLogOut.Text = "Log out";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel3.Controls.Add(this.labelUsername);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 69);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1003, 93);
-            this.panel3.TabIndex = 0;
-            // 
-            // labelUsername
-            // 
-            this.labelUsername.AutoSize = true;
-            this.labelUsername.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsername.Location = new System.Drawing.Point(108, 7);
-            this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(22, 26);
-            this.labelUsername.TabIndex = 4;
-            this.labelUsername.Text = "?";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 7);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 26);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Welcome : ";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TermProjectWindow.Properties.Resources._3592855_business_man_employee_general_human_member_office_tie_107745;
-            this.pictureBox1.Location = new System.Drawing.Point(838, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(103, 51);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -244,6 +181,70 @@
             this.buttonSetting.UseVisualStyleBackColor = true;
             this.buttonSetting.Click += new System.EventHandler(this.buttonSetting_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.linkLabelLogOut);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(200, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1003, 162);
+            this.panel1.TabIndex = 1;
+            // 
+            // linkLabelLogOut
+            // 
+            this.linkLabelLogOut.AutoSize = true;
+            this.linkLabelLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelLogOut.LinkColor = System.Drawing.Color.Black;
+            this.linkLabelLogOut.Location = new System.Drawing.Point(921, 43);
+            this.linkLabelLogOut.Name = "linkLabelLogOut";
+            this.linkLabelLogOut.Size = new System.Drawing.Size(70, 20);
+            this.linkLabelLogOut.TabIndex = 2;
+            this.linkLabelLogOut.TabStop = true;
+            this.linkLabelLogOut.Text = "Log out";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TermProjectWindow.Properties.Resources._3592855_business_man_employee_general_human_member_office_tie_107745;
+            this.pictureBox1.Location = new System.Drawing.Point(838, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(103, 51);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel3.Controls.Add(this.labelUsername);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 69);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1003, 93);
+            this.panel3.TabIndex = 0;
+            // 
+            // labelUsername
+            // 
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.Location = new System.Drawing.Point(108, 7);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(22, 26);
+            this.labelUsername.TabIndex = 4;
+            this.labelUsername.Text = "?";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(9, 7);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 26);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Welcome : ";
+            // 
             // userControl1
             // 
             this.userControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -253,11 +254,21 @@
             this.userControl1.TabIndex = 2;
             this.userControl1.Visible = false;
             // 
+            // userControlClient1
+            // 
+            this.userControlClient1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.userControlClient1.Location = new System.Drawing.Point(200, 162);
+            this.userControlClient1.Name = "userControlClient1";
+            this.userControlClient1.Size = new System.Drawing.Size(1003, 517);
+            this.userControlClient1.TabIndex = 3;
+            this.userControlClient1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1203, 679);
+            this.Controls.Add(this.userControlClient1);
             this.Controls.Add(this.userControl1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -267,12 +278,12 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -296,6 +307,7 @@
         private System.Windows.Forms.Button buttonReservation;
         private System.Windows.Forms.Button buttonSetting;
         private UserSetting.userControl userControl1;
+        private UserControlClient.UserControlClient userControlClient1;
     }
 }
 
