@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace TermProjectWindow.UserSetting
 {
     public partial class userControl : UserControl
@@ -15,6 +16,17 @@ namespace TermProjectWindow.UserSetting
         public userControl()
         {
             InitializeComponent();
+        }
+        private void clear()
+        {
+            textBoxUserName.Clear();
+            textBoxPassword.Clear();
+            tabControlUser.SelectedTab = tabPageAddUser;
+        }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            clear();
         }
     }
 }

@@ -32,5 +32,15 @@ namespace TermProjectWindow
         {
             
         }
+
+        private void buttonReservation_Click(object sender, EventArgs e)
+        {
+            userControlReservation1.Show(); 
+        }
+
+        private void buttonDashboard_Click(object sender, EventArgs e)
+        {
+            user
+        }
     }
 }
