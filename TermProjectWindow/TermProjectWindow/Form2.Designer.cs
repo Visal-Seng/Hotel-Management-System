@@ -1,6 +1,6 @@
 ﻿namespace TermProjectWindow
 {
-    partial class Form1
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -32,27 +32,17 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.linkLabelLogOut = new System.Windows.Forms.LinkLabel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.labelUsername = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonDashboard = new System.Windows.Forms.Button();
             this.buttonClient = new System.Windows.Forms.Button();
             this.buttonRoom = new System.Windows.Forms.Button();
             this.buttonReservation = new System.Windows.Forms.Button();
             this.buttonSetting = new System.Windows.Forms.Button();
-            this.userControlReservation1 = new TermProjectWindow.UserControlReservation();
+            this.userControlRoom1 = new TermProjectWindow.UserControlRoom.UserControlRoom();
             this.userControlClient1 = new TermProjectWindow.UserControlClient.UserControlClient();
-            this.userControl1 = new TermProjectWindow.UserSetting.userControl();
-            this.userControlClient2 = new TermProjectWindow.UserControlClient.UserControlClient();
+            this.userControlReservation1 = new TermProjectWindow.UserControlReservation();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,24 +55,24 @@
             this.flowLayoutPanel1.Controls.Add(this.buttonRoom);
             this.flowLayoutPanel1.Controls.Add(this.buttonReservation);
             this.flowLayoutPanel1.Controls.Add(this.buttonSetting);
-            this.flowLayoutPanel1.Controls.Add(this.userControlClient2);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(267, 836);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel1.TabIndex = 6;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(4, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(267, 196);
-            this.panel2.TabIndex = 0;
+            this.panel2.TabIndex = 7;
             // 
             // label2
             // 
@@ -99,82 +89,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 132);
+            this.label1.Location = new System.Drawing.Point(33, 134);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(218, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "Hotel management";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.linkLabelLogOut);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(267, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1337, 199);
-            this.panel1.TabIndex = 1;
-            // 
-            // linkLabelLogOut
-            // 
-            this.linkLabelLogOut.AutoSize = true;
-            this.linkLabelLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabelLogOut.LinkColor = System.Drawing.Color.Black;
-            this.linkLabelLogOut.Location = new System.Drawing.Point(1228, 53);
-            this.linkLabelLogOut.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkLabelLogOut.Name = "linkLabelLogOut";
-            this.linkLabelLogOut.Size = new System.Drawing.Size(84, 25);
-            this.linkLabelLogOut.TabIndex = 2;
-            this.linkLabelLogOut.TabStop = true;
-            this.linkLabelLogOut.Text = "Log out";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel3.Controls.Add(this.labelUsername);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 85);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1337, 114);
-            this.panel3.TabIndex = 0;
-            // 
-            // labelUsername
-            // 
-            this.labelUsername.AutoSize = true;
-            this.labelUsername.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsername.Location = new System.Drawing.Point(144, 9);
-            this.labelUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(28, 33);
-            this.labelUsername.TabIndex = 4;
-            this.labelUsername.Text = "?";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 9);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 33);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Welcome : ";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TermProjectWindow.Properties.Resources._3592855_business_man_employee_general_human_member_office_tie_107745;
-            this.pictureBox1.Location = new System.Drawing.Point(1117, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 63);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -198,10 +118,9 @@
             this.buttonDashboard.Margin = new System.Windows.Forms.Padding(4);
             this.buttonDashboard.Name = "buttonDashboard";
             this.buttonDashboard.Size = new System.Drawing.Size(263, 63);
-            this.buttonDashboard.TabIndex = 1;
+            this.buttonDashboard.TabIndex = 8;
             this.buttonDashboard.Text = "Dashboard";
             this.buttonDashboard.UseVisualStyleBackColor = true;
-            this.buttonDashboard.Click += new System.EventHandler(this.buttonDashboard_Click);
             // 
             // buttonClient
             // 
@@ -214,10 +133,10 @@
             this.buttonClient.Margin = new System.Windows.Forms.Padding(4);
             this.buttonClient.Name = "buttonClient";
             this.buttonClient.Size = new System.Drawing.Size(263, 63);
-            this.buttonClient.TabIndex = 2;
+            this.buttonClient.TabIndex = 9;
             this.buttonClient.Text = "Client";
             this.buttonClient.UseVisualStyleBackColor = true;
-            this.buttonClient.Click += new System.EventHandler(this.button2_Click);
+            this.buttonClient.Click += new System.EventHandler(this.buttonClient_Click);
             // 
             // buttonRoom
             // 
@@ -230,9 +149,11 @@
             this.buttonRoom.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRoom.Name = "buttonRoom";
             this.buttonRoom.Size = new System.Drawing.Size(263, 63);
-            this.buttonRoom.TabIndex = 3;
+            this.buttonRoom.TabIndex = 10;
             this.buttonRoom.Text = "Room";
             this.buttonRoom.UseVisualStyleBackColor = true;
+            this.buttonRoom.Visible = false;
+            this.buttonRoom.Click += new System.EventHandler(this.buttonRoom_Click);
             // 
             // buttonReservation
             // 
@@ -245,7 +166,7 @@
             this.buttonReservation.Margin = new System.Windows.Forms.Padding(4);
             this.buttonReservation.Name = "buttonReservation";
             this.buttonReservation.Size = new System.Drawing.Size(263, 63);
-            this.buttonReservation.TabIndex = 4;
+            this.buttonReservation.TabIndex = 11;
             this.buttonReservation.Text = "Reservation";
             this.buttonReservation.UseVisualStyleBackColor = true;
             this.buttonReservation.Click += new System.EventHandler(this.buttonReservation_Click);
@@ -261,70 +182,52 @@
             this.buttonSetting.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSetting.Name = "buttonSetting";
             this.buttonSetting.Size = new System.Drawing.Size(263, 63);
-            this.buttonSetting.TabIndex = 5;
+            this.buttonSetting.TabIndex = 12;
             this.buttonSetting.Text = "Setting";
             this.buttonSetting.UseVisualStyleBackColor = true;
-            this.buttonSetting.Click += new System.EventHandler(this.buttonSetting_Click);
             // 
-            // userControlReservation1
+            // userControlRoom1
             // 
-            this.userControlReservation1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlReservation1.Location = new System.Drawing.Point(267, 199);
-            this.userControlReservation1.Name = "userControlReservation1";
-            this.userControlReservation1.Size = new System.Drawing.Size(1337, 637);
-            this.userControlReservation1.TabIndex = 4;
-            this.userControlReservation1.Visible = false;
+            this.userControlRoom1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.userControlRoom1.Location = new System.Drawing.Point(275, 4);
+            this.userControlRoom1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlRoom1.Name = "userControlRoom1";
+            this.userControlRoom1.Size = new System.Drawing.Size(1479, 651);
+            this.userControlRoom1.TabIndex = 8;
             // 
             // userControlClient1
             // 
-            this.userControlClient1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.userControlClient1.Location = new System.Drawing.Point(267, 199);
-            this.userControlClient1.Margin = new System.Windows.Forms.Padding(5);
+            this.userControlClient1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlClient1.Location = new System.Drawing.Point(267, 0);
+            this.userControlClient1.Margin = new System.Windows.Forms.Padding(4);
             this.userControlClient1.Name = "userControlClient1";
-            this.userControlClient1.Size = new System.Drawing.Size(1337, 636);
-            this.userControlClient1.TabIndex = 3;
+            this.userControlClient1.Size = new System.Drawing.Size(1184, 836);
+            this.userControlClient1.TabIndex = 7;
             this.userControlClient1.Visible = false;
             // 
-            // userControl1
+            // userControlReservation1
             // 
-            this.userControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1.Location = new System.Drawing.Point(267, 199);
-            this.userControl1.Margin = new System.Windows.Forms.Padding(5);
-            this.userControl1.Name = "userControl1";
-            this.userControl1.Size = new System.Drawing.Size(1337, 637);
-            this.userControl1.TabIndex = 2;
-            this.userControl1.Visible = false;
+            this.userControlReservation1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.userControlReservation1.Location = new System.Drawing.Point(275, 4);
+            this.userControlReservation1.Name = "userControlReservation1";
+            this.userControlReservation1.Size = new System.Drawing.Size(1479, 651);
+            this.userControlReservation1.TabIndex = 9;
+            this.userControlReservation1.Visible = false;
             // 
-            // userControlClient2
-            // 
-            this.userControlClient2.Location = new System.Drawing.Point(4, 563);
-            this.userControlClient2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.userControlClient2.Name = "userControlClient2";
-            this.userControlClient2.Size = new System.Drawing.Size(8, 8);
-            this.userControlClient2.TabIndex = 6;
-            // 
-            // Form1
+            // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1604, 836);
+            this.ClientSize = new System.Drawing.Size(1451, 836);
             this.Controls.Add(this.userControlReservation1);
+            this.Controls.Add(this.userControlRoom1);
             this.Controls.Add(this.userControlClient1);
-            this.Controls.Add(this.userControl1);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "Form2";
+            this.Text = "Form2";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -334,24 +237,16 @@
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.LinkLabel linkLabelLogOut;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label labelUsername;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button buttonDashboard;
-        private System.Windows.Forms.Button buttonClient;
-        private System.Windows.Forms.Button buttonRoom;
-        private System.Windows.Forms.Button buttonReservation;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button buttonSetting;
-        private UserSetting.userControl userControl1;
+        private System.Windows.Forms.Button buttonReservation;
+        private System.Windows.Forms.Button buttonRoom;
+        private System.Windows.Forms.Button buttonClient;
+        private System.Windows.Forms.Button buttonDashboard;
         private UserControlClient.UserControlClient userControlClient1;
+        private UserControlRoom.UserControlRoom userControlRoom1;
         private UserControlReservation userControlReservation1;
-        private UserControlClient.UserControlClient userControlClient2;
     }
 }
-
