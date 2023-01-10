@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cls\ClsClient.cs" />
+    <Compile Include="Cls\ClsRoom.cs" />
     <Compile Include="Cls\ClsUser.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

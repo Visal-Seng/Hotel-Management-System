@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.tabControlReservation = new System.Windows.Forms.TabControl();
             this.tabPageAddReservation = new System.Windows.Forms.TabPage();
+            this.buttonUpdate = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.dateTimePickerCheckOutDate = new System.Windows.Forms.DateTimePicker();
@@ -55,28 +57,11 @@
             this.textBoxClientIdSearch = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.tabPageUpdateDeleteReservation = new System.Windows.Forms.TabPage();
-            this.buttonClearUC = new System.Windows.Forms.Button();
-            this.buttonCancelUC = new System.Windows.Forms.Button();
-            this.buttonUpdateUC = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.dateTimePickerCheckOutDateUC = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerCheckInDateUC = new System.Windows.Forms.DateTimePicker();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBoxClientIdUC = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.comboBoxRoomNoUC = new System.Windows.Forms.ComboBox();
-            this.comboBoxRoomTypeUC = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tabControlReservation.SuspendLayout();
             this.tabPageAddReservation.SuspendLayout();
             this.tabPageSearchReservation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabPageUpdateDeleteReservation.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlReservation
@@ -84,7 +69,6 @@
             this.tabControlReservation.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.tabControlReservation.Controls.Add(this.tabPageAddReservation);
             this.tabControlReservation.Controls.Add(this.tabPageSearchReservation);
-            this.tabControlReservation.Controls.Add(this.tabPageUpdateDeleteReservation);
             this.tabControlReservation.Location = new System.Drawing.Point(210, 163);
             this.tabControlReservation.Name = "tabControlReservation";
             this.tabControlReservation.SelectedIndex = 0;
@@ -93,6 +77,8 @@
             // 
             // tabPageAddReservation
             // 
+            this.tabPageAddReservation.Controls.Add(this.buttonUpdate);
+            this.tabPageAddReservation.Controls.Add(this.buttonCancel);
             this.tabPageAddReservation.Controls.Add(this.buttonClear);
             this.tabPageAddReservation.Controls.Add(this.buttonAdd);
             this.tabPageAddReservation.Controls.Add(this.dateTimePickerCheckOutDate);
@@ -114,10 +100,30 @@
             this.tabPageAddReservation.Text = "Add reservation";
             this.tabPageAddReservation.UseVisualStyleBackColor = true;
             // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.BackColor = System.Drawing.Color.LightCoral;
+            this.buttonUpdate.Location = new System.Drawing.Point(516, 274);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonUpdate.TabIndex = 14;
+            this.buttonUpdate.Text = "Update";
+            this.buttonUpdate.UseVisualStyleBackColor = false;
+            // 
+            // buttonCancel
+            // 
+            this.buttonCancel.BackColor = System.Drawing.Color.Red;
+            this.buttonCancel.Location = new System.Drawing.Point(625, 274);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.TabIndex = 13;
+            this.buttonCancel.Text = "Cancel";
+            this.buttonCancel.UseVisualStyleBackColor = false;
+            // 
             // buttonClear
             // 
-            this.buttonClear.BackColor = System.Drawing.Color.LightCoral;
-            this.buttonClear.Location = new System.Drawing.Point(290, 276);
+            this.buttonClear.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonClear.Location = new System.Drawing.Point(402, 274);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 23);
             this.buttonClear.TabIndex = 12;
@@ -127,7 +133,7 @@
             // buttonAdd
             // 
             this.buttonAdd.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.buttonAdd.Location = new System.Drawing.Point(187, 276);
+            this.buttonAdd.Location = new System.Drawing.Point(299, 274);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(75, 23);
             this.buttonAdd.TabIndex = 11;
@@ -333,160 +339,6 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Search reservation : ";
             // 
-            // tabPageUpdateDeleteReservation
-            // 
-            this.tabPageUpdateDeleteReservation.Controls.Add(this.buttonClearUC);
-            this.tabPageUpdateDeleteReservation.Controls.Add(this.buttonCancelUC);
-            this.tabPageUpdateDeleteReservation.Controls.Add(this.buttonUpdateUC);
-            this.tabPageUpdateDeleteReservation.Controls.Add(this.label14);
-            this.tabPageUpdateDeleteReservation.Controls.Add(this.dateTimePickerCheckOutDateUC);
-            this.tabPageUpdateDeleteReservation.Controls.Add(this.dateTimePickerCheckInDateUC);
-            this.tabPageUpdateDeleteReservation.Controls.Add(this.label13);
-            this.tabPageUpdateDeleteReservation.Controls.Add(this.textBoxClientIdUC);
-            this.tabPageUpdateDeleteReservation.Controls.Add(this.label12);
-            this.tabPageUpdateDeleteReservation.Controls.Add(this.comboBoxRoomNoUC);
-            this.tabPageUpdateDeleteReservation.Controls.Add(this.comboBoxRoomTypeUC);
-            this.tabPageUpdateDeleteReservation.Controls.Add(this.label11);
-            this.tabPageUpdateDeleteReservation.Controls.Add(this.label10);
-            this.tabPageUpdateDeleteReservation.Controls.Add(this.label9);
-            this.tabPageUpdateDeleteReservation.Location = new System.Drawing.Point(4, 4);
-            this.tabPageUpdateDeleteReservation.Name = "tabPageUpdateDeleteReservation";
-            this.tabPageUpdateDeleteReservation.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageUpdateDeleteReservation.Size = new System.Drawing.Size(1075, 395);
-            this.tabPageUpdateDeleteReservation.TabIndex = 2;
-            this.tabPageUpdateDeleteReservation.Text = "Update and  Cancel reservation";
-            this.tabPageUpdateDeleteReservation.UseVisualStyleBackColor = true;
-            // 
-            // buttonClearUC
-            // 
-            this.buttonClearUC.Location = new System.Drawing.Point(459, 289);
-            this.buttonClearUC.Name = "buttonClearUC";
-            this.buttonClearUC.Size = new System.Drawing.Size(75, 23);
-            this.buttonClearUC.TabIndex = 13;
-            this.buttonClearUC.Text = "Clear";
-            this.buttonClearUC.UseVisualStyleBackColor = true;
-            // 
-            // buttonCancelUC
-            // 
-            this.buttonCancelUC.BackColor = System.Drawing.Color.LightCoral;
-            this.buttonCancelUC.Location = new System.Drawing.Point(368, 289);
-            this.buttonCancelUC.Name = "buttonCancelUC";
-            this.buttonCancelUC.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancelUC.TabIndex = 12;
-            this.buttonCancelUC.Text = "Cancel";
-            this.buttonCancelUC.UseVisualStyleBackColor = false;
-            // 
-            // buttonUpdateUC
-            // 
-            this.buttonUpdateUC.BackColor = System.Drawing.Color.LightBlue;
-            this.buttonUpdateUC.Location = new System.Drawing.Point(277, 289);
-            this.buttonUpdateUC.Name = "buttonUpdateUC";
-            this.buttonUpdateUC.Size = new System.Drawing.Size(75, 23);
-            this.buttonUpdateUC.TabIndex = 11;
-            this.buttonUpdateUC.Text = "Update";
-            this.buttonUpdateUC.UseVisualStyleBackColor = false;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(631, 217);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(105, 16);
-            this.label14.TabIndex = 10;
-            this.label14.Text = "Check out date : ";
-            // 
-            // dateTimePickerCheckOutDateUC
-            // 
-            this.dateTimePickerCheckOutDateUC.Location = new System.Drawing.Point(634, 247);
-            this.dateTimePickerCheckOutDateUC.Name = "dateTimePickerCheckOutDateUC";
-            this.dateTimePickerCheckOutDateUC.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePickerCheckOutDateUC.TabIndex = 9;
-            // 
-            // dateTimePickerCheckInDateUC
-            // 
-            this.dateTimePickerCheckInDateUC.Location = new System.Drawing.Point(277, 247);
-            this.dateTimePickerCheckInDateUC.Name = "dateTimePickerCheckInDateUC";
-            this.dateTimePickerCheckInDateUC.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePickerCheckInDateUC.TabIndex = 8;
-            this.dateTimePickerCheckInDateUC.ValueChanged += new System.EventHandler(this.dateTimePicker3_ValueChanged);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(274, 217);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(97, 16);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "Check in date : ";
-            // 
-            // textBoxClientIdUC
-            // 
-            this.textBoxClientIdUC.Location = new System.Drawing.Point(277, 179);
-            this.textBoxClientIdUC.Name = "textBoxClientIdUC";
-            this.textBoxClientIdUC.Size = new System.Drawing.Size(100, 22);
-            this.textBoxClientIdUC.TabIndex = 6;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(274, 150);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(62, 16);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "Client ID :";
-            // 
-            // comboBoxRoomNoUC
-            // 
-            this.comboBoxRoomNoUC.FormattingEnabled = true;
-            this.comboBoxRoomNoUC.Location = new System.Drawing.Point(634, 103);
-            this.comboBoxRoomNoUC.Name = "comboBoxRoomNoUC";
-            this.comboBoxRoomNoUC.Size = new System.Drawing.Size(121, 24);
-            this.comboBoxRoomNoUC.TabIndex = 4;
-            // 
-            // comboBoxRoomTypeUC
-            // 
-            this.comboBoxRoomTypeUC.FormattingEnabled = true;
-            this.comboBoxRoomTypeUC.Location = new System.Drawing.Point(277, 103);
-            this.comboBoxRoomTypeUC.Name = "comboBoxRoomTypeUC";
-            this.comboBoxRoomTypeUC.Size = new System.Drawing.Size(121, 24);
-            this.comboBoxRoomTypeUC.TabIndex = 3;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(631, 69);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(71, 16);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Room No.:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(274, 69);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 16);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Room type : ";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label9.Location = new System.Drawing.Point(7, 7);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(348, 29);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Update and cancel reservation :";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(1309, 300);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -497,7 +349,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.tabControlReservation);
             this.Name = "UserControlReservation";
             this.Size = new System.Drawing.Size(1479, 651);
@@ -507,8 +358,6 @@
             this.tabPageSearchReservation.ResumeLayout(false);
             this.tabPageSearchReservation.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabPageUpdateDeleteReservation.ResumeLayout(false);
-            this.tabPageUpdateDeleteReservation.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -527,7 +376,6 @@
         private System.Windows.Forms.ComboBox comboBoxRoomType;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabPage tabPageUpdateDeleteReservation;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.DateTimePicker dateTimePickerCheckOutDate;
@@ -542,21 +390,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DateTimePicker dateTimePickerCheckOutDateUC;
-        private System.Windows.Forms.DateTimePicker dateTimePickerCheckInDateUC;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBoxClientIdUC;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBoxRoomNoUC;
-        private System.Windows.Forms.ComboBox comboBoxRoomTypeUC;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.Button buttonClearUC;
-        private System.Windows.Forms.Button buttonCancelUC;
-        private System.Windows.Forms.Button buttonUpdateUC;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button buttonUpdate;
+        private System.Windows.Forms.Button buttonCancel;
     }
 }

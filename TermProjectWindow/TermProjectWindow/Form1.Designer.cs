@@ -41,6 +41,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.userControlClient1 = new TermProjectWindow.UserControlClient.UserControlClient();
+            this.userControlReservation1 = new TermProjectWindow.UserControlReservation();
+            this.userControlRoom1 = new TermProjectWindow.UserControlRoom.UserControlRoom();
+            this.userControlReservation2 = new TermProjectWindow.UserControlReservation();
+            this.userControl1 = new TermProjectWindow.UserSetting.userControl();
+            this.userControlClient2 = new TermProjectWindow.UserControlClient.UserControlClient();
+            this.userControlRoom2 = new TermProjectWindow.UserControlRoom.UserControlRoom();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -76,6 +83,7 @@
             this.buttonSetting.TabIndex = 13;
             this.buttonSetting.Text = "Setting";
             this.buttonSetting.UseVisualStyleBackColor = true;
+            this.buttonSetting.Click += new System.EventHandler(this.buttonSetting_Click);
             // 
             // buttonReservation
             // 
@@ -91,6 +99,7 @@
             this.buttonReservation.TabIndex = 12;
             this.buttonReservation.Text = "Reservation";
             this.buttonReservation.UseVisualStyleBackColor = true;
+            this.buttonReservation.Click += new System.EventHandler(this.buttonReservation_Click);
             // 
             // buttonRoom
             // 
@@ -106,6 +115,7 @@
             this.buttonRoom.TabIndex = 11;
             this.buttonRoom.Text = "Room";
             this.buttonRoom.UseVisualStyleBackColor = true;
+            this.buttonRoom.Click += new System.EventHandler(this.buttonRoom_Click);
             // 
             // buttonClient
             // 
@@ -121,6 +131,7 @@
             this.buttonClient.TabIndex = 10;
             this.buttonClient.Text = "Client";
             this.buttonClient.UseVisualStyleBackColor = true;
+            this.buttonClient.Click += new System.EventHandler(this.buttonClient_Click);
             // 
             // buttonDashboard
             // 
@@ -183,6 +194,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(311, 736);
             this.panel2.Name = "panel2";
@@ -197,7 +209,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1140, 202);
             this.panel4.TabIndex = 2;
-            this.panel4.Visible = false;
             // 
             // panel5
             // 
@@ -208,11 +219,85 @@
             this.panel5.Size = new System.Drawing.Size(1140, 90);
             this.panel5.TabIndex = 0;
             // 
+            // userControlClient1
+            // 
+            this.userControlClient1.Location = new System.Drawing.Point(311, 202);
+            this.userControlClient1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlClient1.Name = "userControlClient1";
+            this.userControlClient1.Size = new System.Drawing.Size(1140, 534);
+            this.userControlClient1.TabIndex = 3;
+            this.userControlClient1.Visible = false;
+            // 
+            // userControlReservation1
+            // 
+            this.userControlReservation1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlReservation1.Location = new System.Drawing.Point(311, 202);
+            this.userControlReservation1.Name = "userControlReservation1";
+            this.userControlReservation1.Size = new System.Drawing.Size(1140, 534);
+            this.userControlReservation1.TabIndex = 4;
+            this.userControlReservation1.Visible = false;
+            // 
+            // userControlRoom1
+            // 
+            this.userControlRoom1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlRoom1.Location = new System.Drawing.Point(311, 202);
+            this.userControlRoom1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlRoom1.Name = "userControlRoom1";
+            this.userControlRoom1.Size = new System.Drawing.Size(1140, 534);
+            this.userControlRoom1.TabIndex = 5;
+            this.userControlRoom1.Visible = false;
+            // 
+            // userControlReservation2
+            // 
+            this.userControlReservation2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlReservation2.Location = new System.Drawing.Point(311, 202);
+            this.userControlReservation2.Name = "userControlReservation2";
+            this.userControlReservation2.Size = new System.Drawing.Size(1140, 534);
+            this.userControlReservation2.TabIndex = 6;
+            this.userControlReservation2.Visible = false;
+            // 
+            // userControl1
+            // 
+            this.userControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1.Location = new System.Drawing.Point(311, 202);
+            this.userControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControl1.Name = "userControl1";
+            this.userControl1.Size = new System.Drawing.Size(1140, 534);
+            this.userControl1.TabIndex = 7;
+            this.userControl1.Visible = false;
+            // 
+            // userControlClient2
+            // 
+            this.userControlClient2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlClient2.Location = new System.Drawing.Point(311, 202);
+            this.userControlClient2.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlClient2.Name = "userControlClient2";
+            this.userControlClient2.Size = new System.Drawing.Size(1140, 534);
+            this.userControlClient2.TabIndex = 8;
+            this.userControlClient2.Visible = false;
+            // 
+            // userControlRoom2
+            // 
+            this.userControlRoom2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlRoom2.Location = new System.Drawing.Point(311, 202);
+            this.userControlRoom2.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlRoom2.Name = "userControlRoom2";
+            this.userControlRoom2.Size = new System.Drawing.Size(1140, 534);
+            this.userControlRoom2.TabIndex = 9;
+            this.userControlRoom2.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1451, 836);
+            this.Controls.Add(this.userControlRoom2);
+            this.Controls.Add(this.userControlClient2);
+            this.Controls.Add(this.userControl1);
+            this.Controls.Add(this.userControlReservation2);
+            this.Controls.Add(this.userControlRoom1);
+            this.Controls.Add(this.userControlReservation1);
+            this.Controls.Add(this.userControlClient1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -243,5 +328,12 @@
         private System.Windows.Forms.Button buttonRoom;
         private System.Windows.Forms.Button buttonReservation;
         private System.Windows.Forms.Button buttonSetting;
+        private UserControlClient.UserControlClient userControlClient1;
+        private UserControlReservation userControlReservation1;
+        private UserControlRoom.UserControlRoom userControlRoom1;
+        private UserControlReservation userControlReservation2;
+        private UserSetting.userControl userControl1;
+        private UserControlClient.UserControlClient userControlClient2;
+        private UserControlRoom.UserControlRoom userControlRoom2;
     }
 }

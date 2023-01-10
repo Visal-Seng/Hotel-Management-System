@@ -21,5 +21,31 @@ namespace TermProjectWindow
         {
 
         }
+
+        private void buttonClient_Click(object sender, EventArgs e)
+        {
+            userControlClient2.Show();
+        }
+
+        private void buttonRoom_Click(object sender, EventArgs e)
+        {
+            userControlClient2.Hide();
+            userControlRoom2.Show();
+        }
+
+        private void buttonReservation_Click(object sender, EventArgs e)
+        {
+            userControlClient1.Hide();
+            userControlRoom2.Hide();
+            userControlReservation1.Show();
+        }
+
+        private void buttonSetting_Click(object sender, EventArgs e)
+        {
+            userControlClient1.Hide();
+            userControlRoom2.Hide();
+            userControlReservation1.Hide();
+            userControl1.Show();
+        }
     }
 }
