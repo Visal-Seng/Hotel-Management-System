@@ -86,7 +86,7 @@
             this.tabPageAddRoom.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPageAddRoom.Size = new System.Drawing.Size(810, 342);
             this.tabPageAddRoom.TabIndex = 0;
-            this.tabPageAddRoom.Text = "Add room";
+            this.tabPageAddRoom.Text = "git";
             this.tabPageAddRoom.UseVisualStyleBackColor = true;
             this.tabPageAddRoom.Click += new System.EventHandler(this.tabPageAddRoom_Click);
             // 
@@ -111,7 +111,7 @@
             // comboBoxFree
             // 
             this.comboBoxFree.FormattingEnabled = true;
-            this.comboBoxFree.Location = new System.Drawing.Point(147, 215);
+            this.comboBoxFree.Location = new System.Drawing.Point(147, 206);
             this.comboBoxFree.Name = "comboBoxFree";
             this.comboBoxFree.Size = new System.Drawing.Size(173, 21);
             this.comboBoxFree.TabIndex = 12;
@@ -161,7 +161,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(143, 191);
+            this.label5.Location = new System.Drawing.Point(143, 182);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 21);
             this.label5.TabIndex = 5;
@@ -187,7 +187,7 @@
             // comboBoxType
             // 
             this.comboBoxType.FormattingEnabled = true;
-            this.comboBoxType.Location = new System.Drawing.Point(147, 122);
+            this.comboBoxType.Location = new System.Drawing.Point(147, 121);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(173, 21);
             this.comboBoxType.TabIndex = 2;
@@ -196,7 +196,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(143, 97);
+            this.label3.Location = new System.Drawing.Point(143, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 21);
             this.label3.TabIndex = 1;
