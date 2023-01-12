@@ -44,13 +44,18 @@ namespace TermProjectWindow.UserControlRoom
             textBoxId.Text = GetId().ToString();
             comboBoxType.Text = "";
             comboBoxFree.Text = "";
-            textBoxPhoneNo.Text = "";
+            textBoxRoomNo.Text = "";
 
         }
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
             Clear();
+        }
+
+        private void tabPageAddRoom_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

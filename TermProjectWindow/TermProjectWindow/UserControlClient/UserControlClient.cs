@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -115,14 +116,20 @@ namespace TermProjectWindow.UserControlClient
             }
             dataGridViewClient.DataSource = Clients;
         }
-
+        
         private void dataGridViewClient_DoubleClick(object sender, EventArgs e)
-        {
-             if(dataGridViewClient.SelectedRows.Count > 0)
+        { 
+            if (dataGridViewClient.SelectedRows.Count > 0)
             {
                 int clientId = (int)dataGridViewClient.SelectedRows[0].Cells[0].Value;
                 RefreshClientById(clientId);
-            }
+                tabControlClient.SelectedIndex = 0;
+            }  
+        }
+
+        private TabPage tabPageAddClient_Click(Action<int> refreshClientById)
+        {
+            throw new NotImplementedException();
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
@@ -182,13 +189,20 @@ namespace TermProjectWindow.UserControlClient
                 return;
             }
             int clientId = int.Parse(textBoxId.Text);
-            ClsClient client = Clients.Where(c => c.Id == clientId).FirstOrDefault();
-            if (client != null)
+            int index = Clients.FindIndex(f => f.Id == clientId);
+            if (index >= 0) 
             {
-                Clients.Remove(client);
+                Clients.RemoveAt(index);
                 MessageBox.Show("Deleted!");
+                ioManager.Save(Clients, fileClient);
+                dataGridViewClient.DataSource = null;
                 Clear();
             }
+        }
+
+        private void dataGridViewClient_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }
