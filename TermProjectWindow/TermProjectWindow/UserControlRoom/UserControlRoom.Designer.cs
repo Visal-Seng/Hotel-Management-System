@@ -83,10 +83,10 @@
             this.tabPageAddRoom.Controls.Add(this.label2);
             this.tabPageAddRoom.Location = new System.Drawing.Point(4, 4);
             this.tabPageAddRoom.Name = "tabPageAddRoom";
-            this.tabPageAddRoom.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPageAddRoom.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageAddRoom.Size = new System.Drawing.Size(810, 342);
             this.tabPageAddRoom.TabIndex = 0;
-            this.tabPageAddRoom.Text = "git";
+            this.tabPageAddRoom.Text = "Add room";
             this.tabPageAddRoom.UseVisualStyleBackColor = true;
             this.tabPageAddRoom.Click += new System.EventHandler(this.tabPageAddRoom_Click);
             // 
@@ -222,7 +222,7 @@
             this.tabPageSearchRoom.Controls.Add(this.label6);
             this.tabPageSearchRoom.Location = new System.Drawing.Point(4, 4);
             this.tabPageSearchRoom.Name = "tabPageSearchRoom";
-            this.tabPageSearchRoom.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPageSearchRoom.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageSearchRoom.Size = new System.Drawing.Size(810, 342);
             this.tabPageSearchRoom.TabIndex = 1;
             this.tabPageSearchRoom.Text = "Search room";
