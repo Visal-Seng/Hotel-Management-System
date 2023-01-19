@@ -116,7 +116,7 @@ namespace TermProjectWindow.UserControlClient
             }
             dataGridViewClient.DataSource = Clients;
         }
-        
+          
         private void dataGridViewClient_DoubleClick(object sender, EventArgs e)
         { 
             if (dataGridViewClient.SelectedRows.Count > 0)

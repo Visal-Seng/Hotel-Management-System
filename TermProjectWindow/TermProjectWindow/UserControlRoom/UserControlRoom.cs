@@ -23,11 +23,12 @@ namespace TermProjectWindow.UserControlRoom
 
         private void UserControlRoom_Load(object sender, EventArgs e)
         {
+            LoadRoomToList();
             Rooms = ioManager.Load<List<ClsRoom>>(fileRoom);
             if(Rooms == null)
             {
                 Rooms = new List<ClsRoom>();
-            }
+            } 
             Clear();
         }
         public int GetId()
@@ -56,6 +57,31 @@ namespace TermProjectWindow.UserControlRoom
         private void tabPageAddRoom_Click(object sender, EventArgs e)
         {
 
+        }
+        private void LoadRoomToList()
+        {
+            comboBoxType.Items.Add("Single");
+            comboBoxType.Items.Add("Double");
+            comboBoxType.Items.Add("Queen");
+            comboBoxType.Items.Add("King");
+            comboBoxType.Items.Add("Family");
+            comboBoxFree.Items.Add("Yes");
+            comboBoxFree.Items.Add("No");
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBoxRoomNo.Text))
+            {
+                MessageBox.Show("Please room no.");
+                return;
+            }
+            int id = int.Parse(textBoxId.Text);
+        }
+
+        private void comboBoxType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
